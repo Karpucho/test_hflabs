@@ -34,9 +34,9 @@ function Login() {
   }
   return (
     <form>
-      <input ref={inputEmail} placeholder='email'/>
-      <input ref={inputPassword} placeholder='password'/>
-      <button onClick={login}>Логин</button>
+      <input className="uk-input uk-form-width-medium" ref={inputEmail} placeholder='email' autoFocus={true}/><br/>
+      <input className="uk-input uk-form-width-medium" ref={inputPassword} placeholder='password'/><br/>
+      <button className="uk-button uk-button-default" onClick={login}>Логин</button>
     </form>
   );
 }

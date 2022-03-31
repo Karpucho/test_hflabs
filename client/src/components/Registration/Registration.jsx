@@ -36,10 +36,10 @@ function Registration() {
 
   return (
     <form>
-        <input ref={inputName} placeholder='name'/>
-        <input ref={inputEmail} placeholder='email'/>
-        <input ref={inputPassword} placeholder='password'/>
-        <button onClick={register}>Зарегистрироваться</button>
+        <input className="uk-input uk-form-width-medium" ref={inputName} placeholder='name' autoFocus={true}/><br/>
+        <input className="uk-input uk-form-width-medium" ref={inputEmail} placeholder='email'/><br/>
+        <input className="uk-input uk-form-width-medium" ref={inputPassword} placeholder='password'/><br/>
+        <button className="uk-button uk-button-default" onClick={register}>Зарегистрироваться</button>
     </form>
   );
 }
