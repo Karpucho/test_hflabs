@@ -36,11 +36,13 @@ function Contact({ contact, inputEl }) {
   return (
     <div>
       <div className="uk-card uk-card-hover uk-card-body">
-        <h3 className="uk-card-title">Контакт:</h3>
-        <p>{contact.text}</p>
+        <h4 className="uk-card-title">Запись:</h4>
+        <p>ID записи: {contact.id}</p>
+
+        <p>Показания температуры: {contact.text}</p>
         <p uk-margin>
           <button className="uk-button uk-button-default" onClick={fetchDeleteContact}>Удалить</button>
-          <button className="uk-button uk-button-default" onClick={fetchUpdateContact}>Изменить</button>
+          <button className="uk-button uk-button-default" onClick={fetchUpdateContact}>Редактировать</button>
         </p>
       </div>
 

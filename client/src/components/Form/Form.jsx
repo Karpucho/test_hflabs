@@ -24,14 +24,16 @@ function Form() {
         body: JSON.stringify(text),
       })
       .then(res => res.json())
-      .then(data => dispatch(addContact(data)))
-    navigate('/contactslist')
+      .then(data => {
+        dispatch(addContact(data))
+        window.alert('Показания добавлены!')
+      })
   }
 
   return (
     <form onSubmit={getName}>
-      <input className="uk-input uk-form-width-medium" ref={inputContact} placeholder='Контакт' autoFocus={true}/>
-      <button className="uk-button uk-button-default" type='submit'>Добавить контакт</button>
+      <input className="uk-input uk-form-width-medium" ref={inputContact} placeholder='Новая запись' autoFocus={true}/>
+      <button className="uk-button uk-button-default" type='submit'>Добавить запись</button>
     </form>
   );
 }

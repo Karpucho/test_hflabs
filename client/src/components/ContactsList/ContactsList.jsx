@@ -20,7 +20,8 @@ function ContactsList() {
 
   return (
     <div>
-      <input className="uk-input uk-form-width-medium" ref={inputEl} placeholder='Новые данные контакта' autoFocus={true}/>
+      <h4>Поле для ввода редактируемых показаний: </h4>
+      <input className="uk-input uk-form-width-large" ref={inputEl} placeholder='Редактируемые показания температуры' autoFocus={true}/>
       <div className="uk-child-width-1-2@s uk-grid-match" uk-grid>
         {contacts.length > 0 ? contacts.map((contact) => <Contact key={contact.id} contact={contact} inputEl={inputEl} />) : 'Нет контактов'}
       </div>

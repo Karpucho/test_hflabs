@@ -8,7 +8,7 @@ export function contactsReducer(state = initialState, action) {
     case ADD_CONTACT:
       return {...state, contacts: [...state.contacts, {id: action.payload.id, text: action.payload.text}]};
     case INIT_CONTACTS:
-      return { ...state, contacts: action.payload.sort((a, b) => a.id - b.id) }
+      return { ...state, contacts: action.payload.sort((a, b) => b.id - a.id) }
     case DELETE_CONTACT:
       return {...state, contacts: [...state.contacts.filter((contact) => contact.id !== +action.payload)]};
     case EDIT_CONTACT_NAME:
