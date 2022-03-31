@@ -6,11 +6,11 @@ router.post('/', async (req, res) => {
   const userid = req.session.user.id;
 
   try {
-    const createdTask = await Card.create({
+    const createdContact = await Card.create({
       text,
       user_id: userid,
     });
-    res.json(createdTask);
+    res.json(createdContact);
   } catch (error) {
     res.status(500).json({ message: 'Ошибка' });
   }

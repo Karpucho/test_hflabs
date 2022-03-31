@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
-import { tasksReducer } from './tasksReducer'
+import { contactsReducer } from './contactsReducer'
 import { usersReducer } from './usersReducer'
 
 export const rootReducer = combineReducers({
-  tasksReducer,
+  contactsReducer,
   usersReducer
 })

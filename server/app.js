@@ -12,7 +12,7 @@ const loginRouter = require('./routes/login');
 const authRouter = require('./routes/auth');
 const logoutRouter = require('./routes/logout');
 const formRouter = require('./routes/form');
-const tasksRouter = require('./routes/taskslist');
+const contactsRouter = require('./routes/contactslist');
 
 const PORT = process.env.PORT || 4000;
 const app = express();
@@ -49,7 +49,7 @@ app.use('/login', loginRouter);
 app.use('/auth', authRouter);
 app.use('/logout', logoutRouter);
 app.use('/form', formRouter);
-app.use('/taskslist', tasksRouter);
+app.use('/contactslist', contactsRouter);
 
 app.listen(PORT, async () => {
   console.log('Сервер запущен на порту', PORT);

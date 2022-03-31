@@ -8,7 +8,7 @@ import Logout from '../Logout/Logout';
 import Home from '../Home/Home';
 import Login from '../Login/Login';
 import Form from '../Form/Form';
-import TasksList from '../TasksList/TasksList';
+import ContactsList from '../ContactsList/ContactsList';
 
 function App() {
 
@@ -33,7 +33,7 @@ function App() {
         <Route path="/logout" element={<Logout />} />
         <Route path="/login" element={<Login />} />
         <Route path="/form" element={<Form />} />
-        <Route path="/taskslist" element={<TasksList />} />
+        <Route path="/contactslist" element={<ContactsList />} />
       </Routes>
     </BrowserRouter>
   );

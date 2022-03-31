@@ -38,7 +38,7 @@ function Registration() {
         <input ref={inputName} placeholder='name'/>
         <input ref={inputEmail} placeholder='email'/>
         <input ref={inputPassword} placeholder='password'/>
-        <button onClick={register}>Рега</button>
+        <button onClick={register}>Зарегистрироваться</button>
     </form>
   );
 }

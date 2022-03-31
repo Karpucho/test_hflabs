@@ -2,7 +2,7 @@
   "development": {
     "username": "postgres",
     "password": "postgres",
-    "database": "to-do-redux",
+    "database": "test_hflabs",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
