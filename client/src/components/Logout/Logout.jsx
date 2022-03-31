@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 function Logout(props) {
   const navigate = useNavigate();
 
+  // разлогинивание (немного костыльное)
   useEffect(()=> {
     fetch('http://localhost:4000/logout', {
       credentials: 'include',

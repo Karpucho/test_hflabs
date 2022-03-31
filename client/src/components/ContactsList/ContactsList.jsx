@@ -13,6 +13,7 @@ function ContactsList() {
 
   const { contacts } = useSelector(state => state.contactsReducer)
 
+// вывести все записи
   useEffect(() => {
     fetch('http://localhost:4000/contactslist', {
       credentials: "include"
@@ -22,6 +23,7 @@ function ContactsList() {
       .catch(err => console.log(err.message))
   },)
 
+  // добавить запись
   function getTemp(event) {
     event.preventDefault()
 

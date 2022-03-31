@@ -11,6 +11,7 @@ function Login() {
   const inputPassword = useRef();
   const navigate = useNavigate();
 
+  // функция логина
   function login(event) {
     event.preventDefault();
     const user = {

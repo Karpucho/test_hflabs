@@ -7,7 +7,7 @@ function Form() {
   const dispatch = useDispatch();
   const inputContact = useRef();
 
-
+  // добавить запись
   function getTemp(event) {
     event.preventDefault()
 

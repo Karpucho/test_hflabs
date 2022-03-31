@@ -11,6 +11,7 @@ function Registration() {
   const dispatch = useDispatch()
   const navigate = useNavigate();
 
+  // функция регистрации
   function register(event) {
     event.preventDefault();
 

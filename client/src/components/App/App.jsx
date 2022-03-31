@@ -14,6 +14,7 @@ function App() {
 
   const dispatch = useDispatch();
 
+  // проверяем авторизацию юзера и получаем доступ к юзеру в любом компоненте
   useEffect(() => {
     fetch('http://localhost:4000/auth', {
       credentials: 'include',

@@ -6,6 +6,7 @@ function Contact({ contact, inputEl }) {
 
   const dispatch = useDispatch()
 
+  // удаление записи
   const fetchDeleteContact = () => {
     fetch(`http://localhost:4000/contactslist/${contact.id}`, {
       method: 'DELETE'
@@ -14,6 +15,7 @@ function Contact({ contact, inputEl }) {
       .then(data => dispatch(deleteContact(data)))
   }
 
+  // редактирование записи
   const fetchUpdateContact = (event) => {
     event.preventDefault()
 
